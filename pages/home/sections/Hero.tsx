@@ -1,0 +1,44 @@
+import Image from "next/image"
+import React from "react"
+import heroBg from "../../../images/hero-bg.jpg"
+import { Button } from "@/components/ui/button"
+
+const Hero = () => {
+  return (
+    <div>
+      <div className="relative">
+        <div>
+          <Image
+            src={heroBg}
+            alt="hero-banner"
+            className="lg:h-[calc(100vh-84px)]"
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute top-1/2 md:w-full text-center -translate-y-1/2 p-4">
+          <div className="flex flex-col gap-8">
+            <h1 className="text-xl md:text-4xl md:leading-14 font-bold tracking-wider text-white">
+              Multi-Farm Management System <br /> Make Your Farm Smarter & More{" "}
+              <br />
+              Organized with Technology
+            </h1>
+            <h4 className="md:text-xl md:leading-8 font-medium text-white">
+              Powerful solutions for managing crops, livestock, and finances all
+              in one place.
+            </h4>
+          </div>
+          <div className="pt-10 flex flex-col md:flex-row gap-4 md:gap-8 justify-center">
+            <Button className="px-8 md:px-16 py-5 text-xl rounded-full">
+                Get Started
+            </Button>
+            <Button variant={"outline"} className="px-8 md:px-16 py-5 text-xl rounded-full bg-transparent text-white">
+                Learn More
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Hero
