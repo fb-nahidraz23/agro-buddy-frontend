@@ -11,7 +11,7 @@ const Hero = () => {
           <Image
             src={heroBg}
             alt="hero-banner"
-            className="lg:h-[calc(100vh-84px)]"
+            className="h-[calc(100vh-70px)] lg:h-[calc(100vh-84px)] object-cover"
           />
         </div>
         <div className="absolute inset-0 bg-black/40"></div>
