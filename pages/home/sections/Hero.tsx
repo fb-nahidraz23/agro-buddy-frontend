@@ -2,6 +2,8 @@ import Image from "next/image"
 import React from "react"
 import heroBg from "../../../images/hero-bg.jpg"
 import { Button } from "@/components/ui/button"
+import SolidButton from "@/components/shared/SolidButton"
+import TransparentButton from "@/components/shared/TransparentButton"
 
 const Hero = () => {
   return (
@@ -28,12 +30,12 @@ const Hero = () => {
             </h4>
           </div>
           <div className="pt-10 flex flex-col md:flex-row gap-4 md:gap-8 justify-center">
-            <Button className="px-8 md:px-16 py-5 text-xl rounded-full">
-                Get Started
-            </Button>
-            <Button variant={"outline"} className="px-8 md:px-16 py-5 text-xl rounded-full bg-transparent text-white">
-                Learn More
-            </Button>
+            <SolidButton
+              text="Get Started"
+            />
+            <TransparentButton
+              text="Learn More"
+            />
           </div>
         </div>
       </div>

@@ -36,7 +36,7 @@ const features = [
 
 const KeyFeatures = () => {
   return (
-    <div className="container mx-auto space-y-8 p-4 lg:p-0">
+    <div className="container mx-auto space-y-8 p-4 lg:p-0 my-4 lg:my-10">
       <div>
         <SectionSubTitle text="Key Features" />
         <SectionTitle text="Track crops, livestock, inventory, and finances with ease, all from one platform" />
