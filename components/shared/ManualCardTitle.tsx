@@ -4,7 +4,7 @@ type CardTitleProps = {
     text: string
 }
 
-const CardTitle = ({text}: CardTitleProps) => {
+const ManualCardTitle = ({text}: CardTitleProps) => {
     return (
         <div className='text-primary text-xl font-bold leading-6'>
             {text}
@@ -12,4 +12,4 @@ const CardTitle = ({text}: CardTitleProps) => {
     );
 };
 
-export default CardTitle;
+export default ManualCardTitle;

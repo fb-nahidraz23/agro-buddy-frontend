@@ -1,11 +1,10 @@
-import Card from "@/components/shared/Card"
-import CardTitle from "@/components/shared/CardTitle"
+import Card from "@/components/shared/ManualCard"
+import CardTitle from "@/components/shared/ManualCardTitle"
 import SectionSubTitle from "@/components/shared/SectionSubTitle"
 import SectionTitle from "@/components/shared/SectionTitle"
 import {
   ShelvingUnit,
   TreePalm,
-  Trees,
   UserStar,
   Warehouse,
 } from "lucide-react"

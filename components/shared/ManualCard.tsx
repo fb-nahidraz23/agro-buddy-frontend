@@ -1,8 +1,8 @@
 import { Trees } from "lucide-react"
 import React from "react"
-import CardTitle from "./CardTitle"
+import CardTitle from "./ManualCardTitle"
 
-const Card = ({ icon, title, desc }) => {
+const ManualCard = ({ icon, title, desc }) => {
   return (
     <div className="flex flex-col items-center gap-4 rounded-2xl border border-card-border bg-card-background px-2 py-6">
       <div className="">{icon}</div>
@@ -14,4 +14,4 @@ const Card = ({ icon, title, desc }) => {
   )
 }
 
-export default Card
+export default ManualCard;
