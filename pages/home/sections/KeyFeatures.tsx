@@ -2,12 +2,7 @@ import Card from "@/components/shared/ManualCard"
 import CardTitle from "@/components/shared/ManualCardTitle"
 import SectionSubTitle from "@/components/shared/SectionSubTitle"
 import SectionTitle from "@/components/shared/SectionTitle"
-import {
-  ShelvingUnit,
-  TreePalm,
-  UserStar,
-  Warehouse,
-} from "lucide-react"
+import { ShelvingUnit, TreePalm, UserStar, Warehouse } from "lucide-react"
 import React from "react"
 
 const features = [
@@ -35,10 +30,16 @@ const features = [
 
 const KeyFeatures = () => {
   return (
-    <div className="container mx-auto space-y-8 p-4 lg:p-0 my-4 lg:my-10">
+    <div className="container mx-auto my-4 space-y-8 p-4 lg:my-10 lg:p-0">
       <div>
-        <SectionSubTitle text="Key Features" />
-        <SectionTitle text="Track crops, livestock, inventory, and finances with ease, all from one platform" />
+        <SectionSubTitle
+          className="pt-5 text-center leading-7 font-bold text-primary md:pt-20 lg:text-2xl"
+          text="Key Features"
+        />
+        <SectionTitle
+          className="pt-4 text-center text-lg font-bold lg:px-96 lg:text-3xl lg:leading-10"
+          text="Track crops, livestock, inventory, and finances with ease, all from one platform"
+        />
       </div>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
         {features.map((feat, index) => (

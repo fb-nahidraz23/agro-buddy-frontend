@@ -3,6 +3,7 @@ import { Button } from "../ui/button"
 
 export type ButtonTextProps = {
   text: string;
+  className?: string
 }
 
 const SolidButton = ({text} : ButtonTextProps) => {

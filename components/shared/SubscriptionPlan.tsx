@@ -155,7 +155,7 @@ const quarterlyPlan = [
     ],
     cta: "Start Now",
   },
-];
+]
 
 const yearlyPlan = [
   {
@@ -206,14 +206,20 @@ const yearlyPlan = [
     ],
     cta: "Start Now",
   },
-];
+]
 
 const SubscriptionPlan = () => {
   return (
     <div className="">
       <div>
-        <SectionSubTitle text="Choose Your Subscription Plan" />
-        <SectionTitle text="Select the perfect plan for your farm. Upgrade, downgrade, or cancel anytime." />
+        <SectionSubTitle
+         className="pt-5 md:pt-20 lg:text-2xl font-bold leading-7 text-primary text-center"
+         text="Choose Your Subscription Plan" 
+         />
+        <SectionTitle
+          className="pt-4 text-center text-lg font-bold lg:px-96 lg:text-3xl lg:leading-10"
+          text="Select the perfect plan for your farm. Upgrade, downgrade, or cancel anytime."
+        />
       </div>
       <div className="flex justify-center py-16">
         <Tabs defaultValue="monthly" className="">
@@ -226,10 +232,13 @@ const SubscriptionPlan = () => {
           {/* Monthly Plan */}
           <TabsContent
             value="monthly"
-            className="grid grid-cols-1 gap-5 lg:grid-cols-3 p-4"
+            className="grid grid-cols-1 gap-5 lg:grid-cols-3"
           >
             {monthlyPlan.map((plan, index) => (
-              <Card key={index} className={`p-8 lg:w-96 justify-between ${index === 1 ? 'bg-card-background border border-[#237A50]' : ''}`}>
+              <Card
+                key={index}
+                className={`justify-between p-8 lg:w-96 ${index === 1 ? "border border-[#237A50] bg-card-background" : ""}`}
+              >
                 <div>
                   <CardHeader className="space-y-4">
                     <CardTitle className="text-center">{plan.title}</CardTitle>
@@ -246,7 +255,7 @@ const SubscriptionPlan = () => {
                       {plan.desc}
                     </CardDescription>
                   </CardHeader>
-                    <hr className="my-6" />
+                  <hr className="my-6" />
                   <CardContent className="text-sm text-muted-foreground">
                     <ul className="space-y-3">
                       {plan.feats.map((feat, index) => (
@@ -259,7 +268,11 @@ const SubscriptionPlan = () => {
                   </CardContent>
                 </div>
                 <CardFooter className="flex-col gap-2">
-                  <Button type="submit" className="w-full hover:bg-primary hover:text-white cursor-pointer" variant={"outline"}>
+                  <Button
+                    type="submit"
+                    className="w-full cursor-pointer hover:bg-primary hover:text-white"
+                    variant={"outline"}
+                  >
                     {plan.cta}
                   </Button>
                 </CardFooter>
@@ -270,10 +283,13 @@ const SubscriptionPlan = () => {
           {/* Quaterly Plan */}
           <TabsContent
             value="quaterly"
-            className="grid grid-cols-1 gap-5 lg:grid-cols-3 p-4"
+            className="grid grid-cols-1 gap-5 p-4 lg:grid-cols-3"
           >
             {quarterlyPlan.map((plan, index) => (
-              <Card key={index} className={`p-8 lg:w-96 justify-between ${index === 1 ? 'bg-card-background border border-[#237A50]' : ''}`}>
+              <Card
+                key={index}
+                className={`justify-between p-8 lg:w-96 ${index === 1 ? "border border-[#237A50] bg-card-background" : ""}`}
+              >
                 <div>
                   <CardHeader className="space-y-4">
                     <CardTitle className="text-center">{plan.title}</CardTitle>
@@ -290,7 +306,7 @@ const SubscriptionPlan = () => {
                       {plan.desc}
                     </CardDescription>
                   </CardHeader>
-                    <hr className="my-6" />
+                  <hr className="my-6" />
                   <CardContent className="text-sm text-muted-foreground">
                     <ul className="space-y-3">
                       {plan.feats.map((feat, index) => (
@@ -303,7 +319,11 @@ const SubscriptionPlan = () => {
                   </CardContent>
                 </div>
                 <CardFooter className="flex-col gap-2">
-                  <Button type="submit" className="w-full hover:bg-primary hover:text-white cursor-pointer" variant={"outline"}>
+                  <Button
+                    type="submit"
+                    className="w-full cursor-pointer hover:bg-primary hover:text-white"
+                    variant={"outline"}
+                  >
                     {plan.cta}
                   </Button>
                 </CardFooter>
@@ -314,10 +334,13 @@ const SubscriptionPlan = () => {
           {/* Yearly Plan */}
           <TabsContent
             value="yearly"
-            className="grid grid-cols-1 gap-5 lg:grid-cols-3 p-4"
+            className="grid grid-cols-1 gap-5 p-4 lg:grid-cols-3"
           >
             {yearlyPlan.map((plan, index) => (
-              <Card key={index} className={`p-8 lg:w-96 justify-between ${index === 1 ? 'bg-card-background border border-[#237A50]' : ''}`}>
+              <Card
+                key={index}
+                className={`justify-between p-8 lg:w-96 ${index === 1 ? "border border-[#237A50] bg-card-background" : ""}`}
+              >
                 <div>
                   <CardHeader className="space-y-4">
                     <CardTitle className="text-center">{plan.title}</CardTitle>
@@ -334,7 +357,7 @@ const SubscriptionPlan = () => {
                       {plan.desc}
                     </CardDescription>
                   </CardHeader>
-                    <hr className="my-6" />
+                  <hr className="my-6" />
                   <CardContent className="text-sm text-muted-foreground">
                     <ul className="space-y-3">
                       {plan.feats.map((feat, index) => (
@@ -347,7 +370,11 @@ const SubscriptionPlan = () => {
                   </CardContent>
                 </div>
                 <CardFooter className="flex-col gap-2">
-                  <Button type="submit" className="w-full hover:bg-primary hover:text-white cursor-pointer" variant={"outline"}>
+                  <Button
+                    type="submit"
+                    className="w-full cursor-pointer hover:bg-primary hover:text-white"
+                    variant={"outline"}
+                  >
                     {plan.cta}
                   </Button>
                 </CardFooter>
