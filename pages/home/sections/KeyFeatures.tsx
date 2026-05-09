@@ -32,12 +32,9 @@ const KeyFeatures = () => {
   return (
     <div className="container mx-auto my-4 space-y-8 p-4 lg:my-10 lg:p-0">
       <div>
-        <SectionSubTitle
-          className="pt-5 text-center leading-7 font-bold text-primary md:pt-20 lg:text-2xl"
-          text="Key Features"
-        />
+        <SectionSubTitle className="text-center" text="Key Features" />
         <SectionTitle
-          className="pt-4 text-center text-lg font-bold lg:px-96 lg:text-3xl lg:leading-10"
+          className="text-center"
           text="Track crops, livestock, inventory, and finances with ease, all from one platform"
         />
       </div>

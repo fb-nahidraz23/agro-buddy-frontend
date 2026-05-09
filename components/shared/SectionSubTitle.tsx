@@ -7,7 +7,7 @@ type SectionSubTitleProps = {
 
 const SectionSubTitle = ({text, className}: SectionSubTitleProps) => {
     return (
-        <div className= {className}>
+        <div className= {`pt-5 leading-7 font-bold text-primary lg:text-2xl ${className}`}>
             {text}
         </div>
     );

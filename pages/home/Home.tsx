@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import KeyFeatures from "./sections/KeyFeatures";
 import OurPlatform from "./sections/OurPlatform";
 import OurSolutions from "./sections/OurSolutions";
+import WhyChooseUs from "./sections/WhyChooseUs";
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <OurPlatform/>
             <SubscriptionPlan/>
             <OurSolutions/>
+            <WhyChooseUs/>
         </div>
     );
 };

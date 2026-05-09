@@ -213,7 +213,7 @@ const SubscriptionPlan = () => {
     <div className="">
       <div>
         <SectionSubTitle
-         className="pt-5 md:pt-20 lg:text-2xl font-bold leading-7 text-primary text-center"
+         className="text-center pt-5 md:pt-20"
          text="Choose Your Subscription Plan" 
          />
         <SectionTitle
@@ -283,7 +283,7 @@ const SubscriptionPlan = () => {
           {/* Quaterly Plan */}
           <TabsContent
             value="quaterly"
-            className="grid grid-cols-1 gap-5 p-4 lg:grid-cols-3"
+            className="grid grid-cols-1 gap-5 lg:grid-cols-3"
           >
             {quarterlyPlan.map((plan, index) => (
               <Card
@@ -334,7 +334,7 @@ const SubscriptionPlan = () => {
           {/* Yearly Plan */}
           <TabsContent
             value="yearly"
-            className="grid grid-cols-1 gap-5 p-4 lg:grid-cols-3"
+            className="grid grid-cols-1 gap-5 lg:grid-cols-3"
           >
             {yearlyPlan.map((plan, index) => (
               <Card
