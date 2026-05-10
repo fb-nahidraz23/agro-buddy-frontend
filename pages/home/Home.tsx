@@ -4,6 +4,7 @@ import KeyFeatures from "./sections/KeyFeatures";
 import OurPlatform from "./sections/OurPlatform";
 import OurSolutions from "./sections/OurSolutions";
 import WhyChooseUs from "./sections/WhyChooseUs";
+import Testimonial from "./sections/Testimonial";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <SubscriptionPlan/>
             <OurSolutions/>
             <WhyChooseUs/>
+            <Testimonial/>
         </div>
     );
 };
