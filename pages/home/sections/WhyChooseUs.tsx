@@ -7,7 +7,7 @@ import { Blocks, Leaf, Vegan, Wrench } from "lucide-react"
 
 const WhyChooseUs = () => {
   return (
-    <div className="container mx-auto my-20 flex items-center justify-center gap-20">
+    <div className="container mx-auto my-20 flex flex-col items-center justify-center gap-5 md:gap-20 p-4 md:p-0">
       <div className="flex-1">
         <Image
           src={whychooseus}
