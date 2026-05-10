@@ -7,7 +7,7 @@ import ourSolutionImage from "../../../images/our-solution.jpg"
 const OurSolutions = () => {
   return (
     <div className="bg-card-background py-20">
-      <div className="container mx-auto flex flex-col-reverse gap-5 md:gap-16 p-4">
+      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-5 md:gap-16 p-4">
         <div className="flex-1 space-y-10">
           <div className="space-y-6">
             <div>
