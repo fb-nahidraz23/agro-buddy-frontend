@@ -210,7 +210,7 @@ const yearlyPlan = [
 
 const SubscriptionPlan = () => {
   return (
-    <div className="">
+    <div className="w-full px-4 py-10 sm:px-6 lg:px-8">
       <div>
         <SectionSubTitle
          className="text-center pt-5 md:pt-20"
@@ -221,8 +221,9 @@ const SubscriptionPlan = () => {
           text="Select the perfect plan for your farm. Upgrade, downgrade, or cancel anytime."
         />
       </div>
-      <div className="flex justify-center py-16">
-        <Tabs defaultValue="monthly" className="">
+      {/* Pricing Tabs */}
+      <div className="flex justify-center items-center py-16">
+        <Tabs defaultValue="monthly" className="w-full max-w-6xl">
           <TabsList>
             <TabsTrigger value="monthly">Monthly</TabsTrigger>
             <TabsTrigger value="quaterly">Quaterly</TabsTrigger>
@@ -232,7 +233,7 @@ const SubscriptionPlan = () => {
           {/* Monthly Plan */}
           <TabsContent
             value="monthly"
-            className="grid grid-cols-1 gap-5 lg:grid-cols-3"
+            className="grid grid-cols-1 lg:grid-cols-3 gap-5 "
           >
             {monthlyPlan.map((plan, index) => (
               <Card
