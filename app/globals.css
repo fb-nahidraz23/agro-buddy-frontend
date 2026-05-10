@@ -23,6 +23,7 @@
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
+  --color-card-border: var(--card-border);
   --color-destructive: var(--destructive);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
@@ -35,6 +36,7 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
+  --color-card-background: var(--card-background);
   --color-card: var(--card);
   --color-foreground: var(--foreground);
   --color-background: var(--background);
@@ -52,6 +54,8 @@
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
+  --card-background: #F3F9F6;
+  --card-border: #237A5017;
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.508 0.118 165.612);
@@ -96,7 +100,9 @@
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
+  --card-border: #237A5017;
   --card-foreground: oklch(0.985 0 0);
+  --card-background: #F3F9F6;
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.432 0.095 166.913);
@@ -135,25 +141,5 @@
   }
   html {
     @apply font-sans;
-  }
-
-  /* SECTION TITLE */
-  .section-title {
-    @apply text-3xl font-bold;
-  }
-
-  /* SECTION SUBTITLE */
-  .section-subtitle {
-    @apply text-2xl font-bold;
-  }
-
-  /* CARD TITLE */
-  .card-title {
-    @apply text-xl font-bold text-primary;
-  }
-
-  /* BUTTON TEXT */
-  .btn-text {
-    /* @apply text-base font-medium; */
   }
 }

@@ -34,7 +34,7 @@ const Navabar = () => {
 
   return (
     <div className="relative flex items-center">
-      <div className="container mx-auto flex items-center justify-between p-6 md:py-6">
+      <div className="container mx-auto flex items-center justify-between py-6 md:py-6">
         <div>Logo</div>
 
         <div className="hidden md:block">
