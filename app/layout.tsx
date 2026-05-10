@@ -27,7 +27,9 @@ export default function RootLayout({
         className=""
       >
         <Navabar/>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider
+          defaultTheme="light"
+        >{children}</ThemeProvider>
       </body>
     </html>
   )

@@ -2,11 +2,12 @@ import React from 'react';
 
 type SectionTitleProps = {
     text: string
+    className?: string
 }
 
-const SectionTitle = ({text}: SectionTitleProps) => {
+const SectionTitle = ({text, className}: SectionTitleProps) => {
     return (
-        <div className='md:px-96 pt-4 text-lg lg:text-3xl text-center font-bold lg:leading-10'>
+        <div className={`pt-4 text-lg font-bold lg:text-3xl lg:leading-10 ${className}`}>
             {text}
         </div>
     );

@@ -1,6 +1,9 @@
+import SubscriptionPlan from "@/components/shared/SubscriptionPlan";
 import Hero from "./sections/Hero";
 import KeyFeatures from "./sections/KeyFeatures";
 import OurPlatform from "./sections/OurPlatform";
+import OurSolutions from "./sections/OurSolutions";
+import WhyChooseUs from "./sections/WhyChooseUs";
 
 const Home = () => {
     return (
@@ -8,6 +11,9 @@ const Home = () => {
             <Hero/>
             <KeyFeatures/>
             <OurPlatform/>
+            <SubscriptionPlan/>
+            <OurSolutions/>
+            <WhyChooseUs/>
         </div>
     );
 };
