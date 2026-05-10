@@ -7,7 +7,7 @@ import ourSolutionImage from "../../../images/our-solution.jpg"
 const OurSolutions = () => {
   return (
     <div className="bg-card-background py-20">
-      <div className="container mx-auto flex gap-16">
+      <div className="container mx-auto flex flex-col-reverse gap-5 md:gap-16 p-4">
         <div className="flex-1 space-y-10">
           <div className="space-y-6">
             <div>
@@ -17,7 +17,7 @@ const OurSolutions = () => {
                 text="Smart Farm Management, Simplified"
               />
             </div>
-            <p className="text-xl leading-9 font-medium text-gray-500">
+            <p className="md:text-xl leading-9 font-medium text-gray-500">
               <span className="font-semibold">At Agro Buddy</span>, we provide a
               complete, scalable platform to help farms manage operations
               efficiently. From crop and livestock tracking to financial
