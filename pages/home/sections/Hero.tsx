@@ -35,6 +35,7 @@ const Hero = () => {
             />
             <TransparentButton
               text="Learn More"
+              className="rounded-full bg-transparent px-8 py-5 text-xl text-white md:px-16 cursor-pointer"
             />
           </div>
         </div>
