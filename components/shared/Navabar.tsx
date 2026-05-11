@@ -5,6 +5,7 @@ import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
 import { Button } from "../ui/button"
+import Image from "next/image"
 
 const navLinks = [
   {
@@ -35,7 +36,14 @@ const Navabar = () => {
   return (
     <div className="relative flex items-center">
       <div className="container mx-auto flex items-center justify-between py-6 md:py-6">
-        <div>Logo</div>
+        <div>
+          <Image
+            src={'/icon.png'}
+            alt="Agro Buddy logo"
+            width={70}
+            height={80}
+          />
+        </div>
 
         <div className="hidden md:block">
           <ul className="flex gap-9">
